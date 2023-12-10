@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sorteador de Prêmios Avançado</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="sorteador-container">
+      <div class="title">
+        <div id="printNome"></div>
+        <h2>Sorteador de Prêmios</h2>
+      </div>
+      <label for="organizador">Nome do organizador:</label>
+      <input type="text" id="organizador" required />
+
+      <label for="quantidadePremios">Quantidade de prêmios:</label>
+      <input type="number" id="quantidadePremios" required />
+
+      <label for="inicio">Número inicial da rifa:</label>
+      <input type="number" id="inicio" required />
+
+      <label for="fim">Número final da rifa:</label>
+      <input type="number" id="fim" required />
+
+      <button onclick="sortear()">Sortear</button>
+      <div id="informacoesSorteio"></div>
+      <div id="resultados"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
